@@ -11,7 +11,7 @@ export class UserListComponent implements OnInit {
   /**
    * FELADAT!
    * Hozd létre az alábbi Input tulajdonságot.
-   * @var users {User[]} - Input tulajdonság.
+   * @var users {User[]} - Input tulajdonság
    * @default []
    */
 
@@ -29,7 +29,7 @@ export class UserListComponent implements OnInit {
    * Az eye gombra kattintás esetén lefutó metódus.
    * Neve: onSelectUser
    * Működése: a this.currentUser értékét beállítja a kapott változóra.
-   * @param user {User} - egy felhasználó.
+   * @param user {User} - egy felhasználó
    * @returns {void}
    */
 
@@ -40,9 +40,9 @@ export class UserListComponent implements OnInit {
    * Az app-user-detail delUser eseményére lefutó metódus.
    * Neve: onDeleteUser
    * Működése:
-   * 1. A this.delUser.emit metódust meghívja a kapott user -el.
-   * 2. A this.currentUser értékeként egy új User -t adj meg.
-   * @param user {User} - egy felhasználó.
+   * 1. A this.delUser.emit metódust meghívja a kapott user-rel.
+   * 2. A this.currentUser értékeként egy új User-t adj meg.
+   * @param user {User} - egy felhasználó
    * @returns {void}
    */
 
