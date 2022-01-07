@@ -29,7 +29,7 @@ akkor tudod megtenni, ha a component várja azt. Azaz annak
 a változónak definiálva kell lennie a component-ben mint 
 @Input tulajdonság.  
 > Ezután egyszerű property-binding-gal tudod átadni:  
-> `<app-test [user]="currentUser"></app-test>  
+> `<app-test [user]="currentUser"></app-test>`  
   
 > Ha egy component-nek van egy eseménye, arra event-binding 
 segítségével tudsz felíratkozni. Ezt az eseményt is létre 
