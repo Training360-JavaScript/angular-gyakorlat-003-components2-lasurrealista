@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { User } from './model/user';
+import { UserService } from './service/user.service';
 
 @Component({
   selector: 'app-root',
@@ -6,14 +8,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Struktúraváltás';
+  title = 'ang-basic-practice003-comp-pipe';
 
-  menuItems: {title: string, link: string, order: number}[] = [
-    {title: 'Támogatás', link: '/support', order: 3},
-    {title: 'Vállalati ügyfelek', link: '/enterprise', order: 2},
-    {title: 'Szolgáltatások', link: '/services', order: 1},
-    {title: 'Árak', link: '/prices', order: 4},
-  ];
+  userList: User[] = this.userService.list;
 
-  regButtonText: string = 'Regisztráció';
+  constructor(
+    private userService: UserService,
+  ) {}
+
+  /**
+   * FELADAT!
+   * Az app-user-list delUser eseményére lefutó metódus.
+   * Neve: onDeleteUser
+   * Működése:
+   * 1. A this.userService.removeUser metódust meghívja a kapott user -el.
+   * @param user {User} - egy felhasználó.
+   * @returns {void}
+   */
+  onDeleteUser(user: User): void {
+    this.userService.removeUser(user);
+  }
 }

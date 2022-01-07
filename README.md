@@ -1,8 +1,8 @@
-# Angular adatkötések gyakorlása
+# Angular Component gyakorlás
 
 ## Kezdő lépések
-- Lépj be a klónozott mappába és állítsd be a projektet:
-- `cd <repo-name>`
+- Lépj be a letöltött mappába és állítsd be a projektet:
+- `cd ang-basic-practice003-comp-pipe`
 - `code . -r`
 - Telepítsd a függőségeket:
 - `npm i`
@@ -11,22 +11,30 @@
 
 ## Feladatok
 - FONTOS! Adatkötésekkel dolgozz, semmilyen adatot ne fixálj a .html állományokban!
-- Nyisd meg az `sample.JPG` fájlt.
-- Az `src/app/app.component.html` fájlban úgy módosítsd a kódot, hogy a képen látható erdményt kapd. Az adatokat tilos fixen megadni és tilos a .ts fájlban 
-dolgozni.
-- Az `src/app/pricing-page/pricing-page.component.ts`, fájlban úgy módosítsd a 
-kódot, hogy a képen látható erdményt kapd. A .html fájlban tilos dolgozni.
+- PONTOSAN EBBEN A SORRENDBEN NYISD MEG A FÁJLOKAT ÉS DOLGOZZ!
+- `src\app\user-detail\user-detail.component.ts`
+- `src\app\user-detail\user-detail.component.html`
+- `src\app\user-list\user-list.component.ts`
+- `src\app\user-list\user-list.component.html`
+- `src\app\app.component.ts`
+- `src\app\app.component.html`
 
 ## Tesztelés
-- Nyisd meg a terminált ebben a mappában és add ki ezt a parancsot:
-- `npm test`
-- Addig csináld, amíg az összes teszt nem lesz jó.
+- Készítettem egy animációt:
+- ``
+- Ez alapján készítsd el az alkalmazást.
 
 ## Segítség
-> Ha fixen meg akarsz jeleníteni egy értéket az interpolációt használd:  
-> `{{ name }}` a name változó a kapcsolódó osztályból jön  
+> Ha egy component -nek át akarsz adni egy változót, csak 
+akkor tudod megtenni, ha a component várja azt. Azaz, annak 
+a változónak definiálva kell lennie a component -ben mint 
+@Input tulajdonság.  
+> Ezután egyszerű property-binding -al tudod átadni:  
+> `<app-test [user]="currentUser"></app-test>  
   
-> Ha egy attribútum értékét szeretnéd módosítani a property bindig -ot használd:  
-> `[title]="title"` a title változó a kapcsolódó osztályból jön  
+> Ha egy componentnek van egy eseménye, arra event-binding 
+segítségével tudsz feliratkozni. Ezt az eseményt is létre 
+kell hozni először @Output tulajdonságként.
+> `<app-test (delUser)="onDelUser(user)"></app-test>`
   
 
