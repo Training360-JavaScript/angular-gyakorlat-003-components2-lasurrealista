@@ -21,11 +21,9 @@
               és ezek jelenjenek meg a td -kben:
               id, name, email, address, active
            -->
-          <td>{{ user.id }}</td>
-          <td>{{ user.name }}</td>
-          <td>{{ user.email }}</td>
-          <td>{{ user.address }}</td>
-          <td>{{ user.active }}</td>
+
+
+
           <td>
             <!--
               FELADAT!
@@ -34,9 +32,8 @@
               3. Állítsd be a gombra event-binding segítségével a click
               eseményre az onSelectUser metódust és add át neki a user -t.
             -->
-            <button (click)="onSelectUser(user)" class="btn btn-info">
-              <i class="fa fa-eye"></i>
-            </button>
+
+
           </td>
         </tr>
       </tbody>
@@ -52,6 +49,7 @@
         az értéke az onDeleteUser metódus legyen, és ennek a
         metódusnak add át az $event paramétert.
      -->
-    <app-user-detail [user]="currentUser" (delUser)="onDeleteUser($event)"></app-user-detail>
+
+
   </div>
 </div>

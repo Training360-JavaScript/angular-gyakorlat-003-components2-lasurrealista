@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { User } from './model/user';
+import { TestService } from './service/test.service';
 import { UserService } from './service/user.service';
 
 @Component({
@@ -25,7 +26,6 @@ export class AppComponent {
    * @param user {User} - egy felhasználó.
    * @returns {void}
    */
-  onDeleteUser(user: User): void {
-    this.userService.removeUser(user);
-  }
+
+
 }

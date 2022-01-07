@@ -14,7 +14,8 @@ export class UserListComponent implements OnInit {
    * @var users {User[]} - Input tulajdonság.
    * @default []
    */
-  @Input() users: User[] = [];
+
+
   @Output() delUser: EventEmitter<User> = new EventEmitter();
   currentUser: User = new User();
 
@@ -31,9 +32,8 @@ export class UserListComponent implements OnInit {
    * @param user {User} - egy felhasználó.
    * @returns {void}
    */
-  onSelectUser(user: User): void {
-    this.currentUser = user;
-  }
+
+
 
   /**
    * FELADAT!
@@ -41,13 +41,11 @@ export class UserListComponent implements OnInit {
    * Neve: onDeleteUser
    * Működése:
    * 1. A this.delUser.emit metódust meghívja a kapott user -el.
-   * 2. A this.currentUser értékeként egy új User -t ad meg.
+   * 2. A this.currentUser értékeként egy új User -t adj meg.
    * @param user {User} - egy felhasználó.
    * @returns {void}
    */
-  onDeleteUser(user: User): void {
-    this.delUser.emit(user);
-    this.currentUser = new User();
-  }
+
+
 
 }
