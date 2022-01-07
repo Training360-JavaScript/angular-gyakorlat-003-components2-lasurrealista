@@ -11,7 +11,7 @@ export class UserDetailComponent implements OnInit {
   /**
    * FELADAT!
    * Hozd létre az alábbi Input tulajdonságot.
-   * @var user {User} - Input tulajdonság.
+   * @var user {User} - Input tulajdonság
    * @default új User
    */
 
@@ -27,8 +27,8 @@ export class UserDetailComponent implements OnInit {
    * FELADAT!
    * A törlés gombra kattintás esetén lefutó metódus.
    * Neve: onDelete
-   * Működése: a this.delUser.emit metódust meghívja a kapott user -el.
-   * @param user {User} - az aktuális felhasználó.
+   * Működése: a this.delUser.emit metódust meghívja a kapott user-rel.
+   * @param user {User} - az aktuális felhasználó
    * @returns {void}
    */
 
