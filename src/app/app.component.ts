@@ -1,6 +1,5 @@
-import { Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { User } from './model/user';
-import { TestService } from './service/test.service';
 import { UserService } from './service/user.service';
 
 @Component({
@@ -22,10 +21,11 @@ export class AppComponent {
    * Az app-user-list delUser eseményére lefutó metódus.
    * Neve: onDeleteUser
    * Működése:
-   * 1. A this.userService.removeUser metódust meghívja a kapott user-rel.
-   * @param user {User} - egy felhasználó
+   * 1. A this.userService.removeUser metódust meghívja a kapott user -el.
+   * @param user {User} - egy felhasználó.
    * @returns {void}
    */
-
-
+  onDeleteUser(user: User): void {
+    this.userService.removeUser(user);
+  }
 }

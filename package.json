@@ -6,8 +6,9 @@
     "start": "node run-esbuild-v3.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test:01": "ng test --browsers ChromeHeadless --watch false --include app/app.component.spec.ts",
-    "test:02": "ng test --browsers ChromeHeadless --watch false --include app/pricing-page/pricing-page.component.spec.ts",
+    "test:01": "ng test --browsers ChromeHeadless --watch false --include app/user-detail/user-detail.component.spec.ts",
+    "test:02": "ng test --browsers ChromeHeadless --watch false --include app/user-list/user-list.component.spec.ts",
+    "test:03": "ng test --browsers ChromeHeadless --watch false --include app/app.component.ts",
     "test": "ng test --browsers ChromeHeadless --watch false"
   },
   "private": true,
