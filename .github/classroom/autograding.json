@@ -1,9 +1,29 @@
 {
   "tests": [
     {
-      "name": "Final-test",
+      "name": "test:01",
       "setup": "npm install",
-      "run": "npm test",
+      "run": "npm run test:01",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "test:02",
+      "setup": "npm install",
+      "run": "npm run test:02",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "test:03",
+      "setup": "npm install",
+      "run": "npm run test:03",
       "input": "",
       "output": "",
       "comparison": "included",
