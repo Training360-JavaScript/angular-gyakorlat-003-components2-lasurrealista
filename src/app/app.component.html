@@ -31,13 +31,11 @@
   <!--
     FELADAT!
     1. Szúrd be ide az app-user-list komponenst.
-    2. Állítsd be property binding-gal a users változóját,
+    2. Állítsd be property-binding -al a users változóját,
       az értéke a userList legyen.
-    3. Állítsd be event binding-gal a delUser eseményét,
+    3. Állítsd be event-binding -al a delUser eseményét,
       az értéke az onDeleteUser metódus legyen, és ennek a
       metódusnak add át az $event paramétert.
     -->
-
-
-
+  <app-user-list [users]="userList" (delUser)="onDeleteUser($event)"></app-user-list>
 </div>
